@@ -41,8 +41,8 @@ class Owner
   end
   
   def walk_dogs
-    dogs.each {|dog| dog.mood == "happy"}
-    # binding.pry
+    dogs.map! {|dog| dog.mood == "happy"}
+binding.pry
   end
     
   # binding.pry  
