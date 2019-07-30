@@ -1,6 +1,6 @@
 class Cat
   
-  attr_accessor :owner
+  attr_accessor :owner, :mood
   attr_reader :name
   
   def initialize(name, owner)
@@ -10,6 +10,7 @@ class Cat
     else
       @owner = Owner.new(owner)
     end
+    @mood = "nervous"
     # binding.pry
   end
   
