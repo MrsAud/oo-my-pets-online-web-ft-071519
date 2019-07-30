@@ -45,7 +45,7 @@ class Owner
   end
   
   def feed_cats
-    catss.map {|cat| cat.mood = "happy"}
+    cats.map {|cat| cat.mood = "happy"}
   end
     
   # binding.pry  
