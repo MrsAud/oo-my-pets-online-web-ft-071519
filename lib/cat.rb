@@ -10,7 +10,7 @@ class Cat
     else
       @owner = Owner.new(owner)
     end
-    binding.pry
+    # binding.pry
   end
   
   
