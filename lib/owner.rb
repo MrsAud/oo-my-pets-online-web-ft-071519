@@ -53,7 +53,10 @@ class Owner
       dog.mood = "nervous"
       dog.owner = nil
     end
-    cats.map {|cat| cat.mood = "nervous" cat.owner = nil}
+    cats.map do |cat| 
+      cat.mood = "nervous" 
+      cat.owner = nil
+    end
   end
     
   # binding.pry  
