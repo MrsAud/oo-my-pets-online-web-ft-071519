@@ -47,6 +47,11 @@ class Owner
   def feed_cats
     cats.map {|cat| cat.mood = "happy"}
   end
+  
+  def sell_pets
+    dogs.map {|dog| dog.mood = "nervous"}
+    cats.map {|cat| cat.mood = "nervous"}
+  end
     
   # binding.pry  
   
