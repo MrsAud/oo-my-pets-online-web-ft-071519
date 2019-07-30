@@ -5,7 +5,11 @@ class Cat
   
   def initialize(name, owner)
     @name = name
-    @owner = Owner.new(owner) unless Owner.all.include?(owner)
+    if Owner.all.include?(owner)
+      @owner = owner
+    else
+      @owner = Owner.new(owner)
+    end
     binding.pry
   end
   
